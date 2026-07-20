@@ -19,8 +19,5 @@
 
         assign controller_op_code = ir_reg[7:4];
         assign bus_write_data_adress = (!ei_n) ? {4'b0000 ,ir_reg[3:0]} : 8'hzz; 
-        // Aici urmează să scrii tu:
-        // 1. always_ff pentru a memora bus_read în ir_reg când li_n este 0
-        // 2. assign pentru a trimite primii 4 biți din ir_reg către controller_op_code
-        // 3. assign pentru buffer-ul tri-state (dacă ei_n e 0, pune adresa pe bus_write, altfel 'z')
+
     endmodule

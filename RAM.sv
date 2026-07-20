@@ -1,5 +1,5 @@
 module Ram (
-    input  logic       ce_n,    // Chip enable, activ pe 0 (vine de la Controller)
+    input  logic       ce_n,    // Chip enable, activ pe 0 
     input  logic [3:0] address, // Adresa (vine de la MAR)
     output logic [7:0] bus_w    // Ieșirea spre magistrală
 );
